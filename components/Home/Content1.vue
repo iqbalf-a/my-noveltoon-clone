@@ -16,9 +16,9 @@
 
         <div class="grid grid-cols-5 gap-3">
           <!-- Content Item -->
-          <div v-for="item in data" :key="item?.id">
+          <div v-for="item in data?.slice(0, 10)" :key="item?.id">
             <a href="">
-              <img :src="item.imageUrl" :alt="item.name" />
+              <img :src="item.imageUrl" :alt="item.name" class="rounded-lg" />
               <p class="mt-3 text-base">{{ item?.name }}</p>
               <p class="text-sm/[18px] truncate">{{ item?.tags }}</p>
             </a>
@@ -44,16 +44,18 @@
                   :src="item.imageUrl"
                   :alt="item.name"
                   style="height: 100px; width: 150px"
-                  class="overflow-hidden"
+                  class="relative overflow-hidden rounded-lg"
                 />
               </a>
               <a href="" class="col-span-2 ml-4">
-                <p class="text-base">{{ item?.name }}</p>
-                <p class="text-sm/[18px]">{{ item?.synopsis }}</p>
+                <p class="text-sm">{{ item?.name }}</p>
+                <p class="text-xs/[18px] line-clamp-3 mt-3">
+                  {{ item?.synopsis }}
+                </p>
               </a>
             </div>
           </div>
-          <p class="mt-4">Romantis Novel (novelku) ></p>
+          <a href="" class="mt-8">Romantis Novel (novelku) ></a>
         </div>
       </div>
     </div>

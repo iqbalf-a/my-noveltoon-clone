@@ -5,15 +5,18 @@
         <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
         <p class="text-lg font-bold uppercase">{{ itemHeadline?.listTitle }}</p>
         <div class="flex flex-wrap mt-8 gap-5">
-          <div v-for="item in data?.slice(0, 6)" :key="item?.id">
+          <div v-for="item in data?.slice(0, 6)" :key="item?.id" class="w-40">
             <a href="">
               <img
                 :src="item.imageUrl"
                 :alt="item.name"
                 style="height: 185px; width: 140px"
+                class="rounded-lg"
               />
               <p class="mt-2 text-base">{{ item?.name }}</p>
-              <small class="truncate">{{ item?.synopsis }}</small>
+              <p class="line-clamp-2 text-xs text-light">
+                {{ item?.synopsis }}
+              </p>
             </a>
           </div>
         </div>

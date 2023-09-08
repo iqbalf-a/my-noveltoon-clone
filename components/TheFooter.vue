@@ -1,11 +1,11 @@
 <template>
   <div class="mx-12 px-12 text-center">
     <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-    <p class="text-xl font-bold">
+    <p class="text-xl font-semibold">
       Novel sejumlah besar sedang menunggu Anda baca! Juga ada komik, buku
       audio, dan konten lain untuk dipilih~
     </p>
-    <p class="text-lg font-bold">Semua konten</p>
+    <p class="text-lg font-semibold">Semua konten</p>
   </div>
   <div class="mx-12 px-12">
     <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />

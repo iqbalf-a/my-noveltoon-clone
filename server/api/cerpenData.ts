@@ -2,44 +2,105 @@ export default defineEventHandler((event) => {
   const data = [
     {
       id: 1,
-      title: "novel pilihan editor",
-      author: "Farras",
-      comments: 6,
-      likes: 6,
-      imageUrl: "https://via.placeholder.com/120x160",
+      title: "Cinta Sejati",
+      author: "Anna Johnson",
+      comments: 25,
+      likes: 120,
+      imageUrl: "https://picsum.photos/id/204/24",
       synopsis:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum",
+        "Kisah cinta antara Sarah dan David, dua jiwa yang terikat oleh takdir. Meskipun rintangan datang, cinta mereka tetap kuat. Mereka menghadapi ujian-ujian kehidupan bersama-sama, dan kisah cinta mereka menginspirasi banyak orang.",
     },
     {
       id: 2,
-      title: "novel karya klasik wajib baca",
-      author: "Farras",
-      comments: 6,
-      likes: 6,
-      imageUrl: "https://via.placeholder.com/120x160",
+      title: "Melodi Malam",
+      author: "Michael Brown",
+      comments: 30,
+      likes: 98,
+      imageUrl: "https://picsum.photos/id/202/24",
       synopsis:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum",
+        "Sebuah malam yang penuh dengan musik, bintang, dan kenangan yang tak terlupakan. Suara musik memenuhi udara, membawa perasaan ke dalam hati semua yang hadir. Malam itu, mereka merasakan keajaiban sejati.",
     },
     {
       id: 3,
-      title: "ebook karya klasik tamat",
-      author: "Farras",
-      comments: 6,
-      likes: 4,
-      imageUrl: "https://via.placeholder.com/120x160",
+      title: "Hujan Terakhir",
+      author: "Emily White",
+      comments: 15,
+      likes: 75,
+      imageUrl: "https://picsum.photos/id/201/24",
       synopsis:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum",
+        "Kisah seorang wanita yang mengenang kisah cinta yang hilang selama hujan yang terakhir kali mereka habiskan bersama. Hujan yang turun membawa kenangan manis tentang pertemuan mereka, tetesan-tetesan air yang menghapus luka di hatinya.",
     },
     {
       id: 4,
-      title: "cerita disukai banyak wanita",
-      author: "Farras",
-      comments: 6,
-      likes: 6,
-      imageUrl: "https://via.placeholder.com/120x160",
+      title: "Petualangan di Pantai",
+      author: "David Black",
+      comments: 18,
+      likes: 110,
+      imageUrl: "https://picsum.photos/id/232/24",
       synopsis:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum",
+        "Liburan di pantai yang berubah menjadi petualangan tak terlupakan. Mereka menemukan harta karun yang hilang bertahun-tahun lamanya, tetapi juga menghadapi badai yang menakutkan.",
+    },
+    {
+      id: 5,
+      title: "Misteri Hutan",
+      author: "Sophia Williams",
+      comments: 12,
+      likes: 88,
+      imageUrl: "https://picsum.photos/id/233/24",
+      synopsis:
+        "Sebuah ekspedisi ke dalam hutan yang menemukan misteri kuno yang tersembunyi. Mereka menemukan reruntuhan kota kuno yang terkubur di tengah hutan lebat, dan misteri apa yang mungkin terjadi di sana.",
+    },
+    {
+      id: 6,
+      title: "Rahasia Perpustakaan",
+      author: "John Doe",
+      comments: 22,
+      likes: 150,
+      imageUrl: "https://picsum.photos/id/232/24",
+      synopsis:
+        "Seorang pengunjung perpustakaan menemukan buku tua yang mengubah hidupnya. Buku itu berisi rahasia-rahasia luar biasa yang tidak pernah dia bayangkan sebelumnya.",
+    },
+    {
+      id: 7,
+      title: "Pergi ke Luar Angkasa",
+      author: "Laura Davis",
+      comments: 28,
+      likes: 135,
+      imageUrl: "https://picsum.photos/id/235/24",
+      synopsis:
+        "Petualangan luar angkasa yang membawa seorang astronot ke galaksi yang belum pernah terjamah sebelumnya. Dia menyaksikan keindahan luar angkasa yang memukau dan menemukan kehidupan di tempat yang tak terduga.",
+    },
+    {
+      id: 8,
+      title: "Kota yang Hilang",
+      author: "Alan Reynolds",
+      comments: 19,
+      likes: 92,
+      imageUrl: "https://picsum.photos/id/236/24",
+      synopsis:
+        "Kisah tentang persahabatan yang tak tergantikan antara dua teman selama bertahun-tahun. Mereka mengalami semua perjalanan hidup bersama-sama, berbagi tawa dan tangis, dan menjadi dukungan yang tak tergantikan satu sama lain.",
+    },
+    {
+      id: 9,
+      title: "Kisah Sahabat",
+      author: "Ella Robinson",
+      comments: 24,
+      likes: 128,
+      imageUrl: "https://picsum.photos/id/237/24",
+      synopsis:
+        "Kisah tentang persahabatan yang tak tergantikan antara dua teman selama bertahun-tahun. Mereka mengalami semua perjalanan hidup bersama-sama, berbagi tawa dan tangis, dan menjadi dukungan yang tak tergantikan satu sama lain.",
+    },
+    {
+      id: 10,
+      title: "Malam Terakhir di Paris",
+      author: "Olivia White",
+      comments: 20,
+      likes: 105,
+      imageUrl: "https://picsum.photos/id/238/24",
+      synopsis:
+        "Sebuah malam terakhir di Paris yang penuh dengan keajaiban, seni, dan cinta. Mereka menjelajahi jalan-jalan kota yang indah, menikmati kuliner klasik, dan merasakan pesona kota cahaya yang tak terlupakan.",
     },
   ];
+
   return data;
 });

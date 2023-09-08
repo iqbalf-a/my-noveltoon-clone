@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 //meta title
 useHead({
-  title: "Welcome - SantriKoding.com",
+  title: "Noveltoon - Clone",
 });
 </script>
 

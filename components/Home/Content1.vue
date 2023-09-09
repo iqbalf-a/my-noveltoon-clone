@@ -16,28 +16,28 @@
 
         <div class="flex flex-wrap">
           <!-- Content Item -->
-          <div
-            v-for="item in data?.slice(0, 10)"
-            :key="item?.id"
-            class="w-36 mt-8 ml-4"
-          >
-            <a href="">
+          <div v-for="item in data?.slice(0, 10)" :key="item?.id" class="">
+            <a href="" class="md:w-36 mt-8 md:ml-4 flex md:flex-col sm:flex">
               <img
                 :src="item.imageUrl + generateRandom() + '/120/160'"
                 :alt="item.name"
                 class="rounded-lg"
               />
-              <p class="mt-3 text-base">{{ item?.name }}</p>
-              <p class="text-sm/[18px] truncate">{{ item?.tags }}</p>
+              <div class="pl-4">
+                <p class="md:mt-3 text-base">{{ item?.name }}</p>
+                <p class="text-sm/[18px] truncate">{{ item?.tags }}</p>
+              </div>
             </a>
           </div>
         </div>
       </div>
 
       <!-- Right Content -->
-      <div class="w-[20rem]">
-        <div>
-          <p class="text-lg font-bold">Novelku - Baca dan tulis dimanapun</p>
+      <div class="sm:w-[20rem]">
+        <div class="">
+          <p class="text-lg font-bold lg:pt-0 md:pt-8 sm:pt-8">
+            Novelku - Baca dan tulis dimanapun
+          </p>
         </div>
         <div>
           <div class="mt-8">

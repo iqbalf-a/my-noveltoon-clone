@@ -27,7 +27,7 @@ function generateRandom(min = 0, max = 500) {
         >
           <img
             :src="'https://picsum.photos/id/' + generateRandom() + '/800/400'"
-            class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-xl w-1/2"
+            class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-xl h-96 w-auto object-cover"
             alt="..."
           />
         </div>
@@ -83,7 +83,7 @@ function generateRandom(min = 0, max = 500) {
       ></button> -->
     </div>
     <!-- Slider controls -->
-    <button
+    <!-- <button
       type="button"
       class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
       data-carousel-prev
@@ -134,7 +134,7 @@ function generateRandom(min = 0, max = 500) {
         </svg>
         <span class="sr-only">Next</span>
       </span>
-    </button>
+    </button> -->
   </div>
 </template>
 

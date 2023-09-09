@@ -22,7 +22,11 @@
             class="w-36 mt-8 ml-4"
           >
             <a href="">
-              <img :src="item.imageUrl" :alt="item.name" class="rounded-lg" />
+              <img
+                :src="item.imageUrl + generateRandom() + '/120/160'"
+                :alt="item.name"
+                class="rounded-lg"
+              />
               <p class="mt-3 text-base">{{ item?.name }}</p>
               <p class="text-sm/[18px] truncate">{{ item?.tags }}</p>
             </a>
@@ -45,7 +49,7 @@
             >
               <a href="" class="w-1/3">
                 <img
-                  :src="item.imageUrl"
+                  :src="item.imageUrl + generateRandom() + '/120/160'"
                   :alt="item.name"
                   style="height: 100px; width: 200px"
                   class="object-cover rounded-lg"
@@ -78,6 +82,9 @@ export default {
 
 <script setup lang="ts">
 const { data } = await useFetch("/api/novelsData");
+function generateRandom(min = 0, max = 500) {
+  return Math.floor(Math.random() * max) + min;
+}
 </script>
 
 <style lang="scss" scoped></style>

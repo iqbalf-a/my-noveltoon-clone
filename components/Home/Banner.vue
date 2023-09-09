@@ -6,6 +6,9 @@ import { initFlowbite } from "flowbite";
 onMounted(() => {
   initFlowbite();
 });
+function generateRandom(min = 0, max = 500) {
+  return Math.floor(Math.random() * max) + min;
+}
 </script>
 
 <template>
@@ -16,55 +19,34 @@ onMounted(() => {
   >
     <!-- Carousel wrapper -->
     <div class="relative h-56 overflow-hidden rounded-xl md:h-96">
-      <!-- Item 1 -->
-      <div
-        class="hidden duration-700 ease-in-out rounded-xl"
-        data-carousel-item
-      >
-        <img
-          src="https://picsum.photos/id/232/800/400"
-          class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-xl w-1/2"
-          alt="..."
-        />
-      </div>
-      <!-- Item 2 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img
-          src="https://picsum.photos/id/234/800/400"
-          class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-xl w-1/2"
-          alt="..."
-        />
-      </div>
-      <!-- Item 3 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img
-          src="https://picsum.photos/id/235/800/400"
-          class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-xl w-1/2"
-          alt="..."
-        />
-      </div>
-      <!-- Item 4 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img
-          src="https://picsum.photos/id/237/800/400"
-          class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-xl w-1/2"
-          alt="..."
-        />
-      </div>
-      <!-- Item 5 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img
-          src="https://picsum.photos/id/244/800/400"
-          class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-xl w-1/2"
-          alt="..."
-        />
+      <div v-for="index in 5" :key="index">
+        <!-- Item 1-5 -->
+        <div
+          class="hidden duration-700 ease-in-out rounded-xl"
+          data-carousel-item
+        >
+          <img
+            :src="'https://picsum.photos/id/' + generateRandom() + '/800/400'"
+            class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-xl w-1/2"
+            alt="..."
+          />
+        </div>
       </div>
     </div>
     <!-- Slider indicators -->
     <div
       class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
     >
-      <button
+      <div v-for="index in 5" :key="index">
+        <button
+          type="button"
+          class="w-3 h-3 rounded-full"
+          aria-current="true"
+          :aria-label="'Slide' + index"
+          :data-carousel-slide-to="index - 1"
+        ></button>
+      </div>
+      <!-- <button
         type="button"
         class="w-3 h-3 rounded-full"
         aria-current="true"
@@ -98,7 +80,7 @@ onMounted(() => {
         aria-current="false"
         aria-label="Slide 5"
         data-carousel-slide-to="4"
-      ></button>
+      ></button> -->
     </div>
     <!-- Slider controls -->
     <button

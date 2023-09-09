@@ -8,7 +8,7 @@
           <div v-for="item in data?.slice(0, 6)" :key="item?.id" class="w-40">
             <a href="">
               <img
-                :src="item.imageUrl"
+                :src="item.imageUrl + generateRandom() + '/120/160'"
                 :alt="item.name"
                 style="height: 185px; width: 140px"
                 class="rounded-lg"
@@ -28,6 +28,9 @@
 <script setup lang="ts">
 const { data } = await useFetch("/api/novelsData");
 const dataHeadline = await useFetch("/api/novelsListTitle").data;
+function generateRandom(min = 0, max = 500) {
+  return Math.floor(Math.random() * max) + min;
+}
 </script>
 
 <style lang="scss" scoped></style>

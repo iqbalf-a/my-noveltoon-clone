@@ -1,17 +1,5 @@
 function generateRandom(min = 0, max = 500) {
-  // find diff
-  let difference = max - min;
-
-  // generate random number
-  let rand = Math.random();
-
-  // multiply with difference
-  rand = Math.floor(rand * difference);
-
-  // add with min value
-  rand = rand + min;
-
-  return rand;
+  return Math.floor(Math.random() * max) + min;
 }
 
 export default defineEventHandler((event) => {
@@ -20,7 +8,7 @@ export default defineEventHandler((event) => {
       id: 1,
       name: "Petualangan Kerajaan yang Hilang",
       category: "Fantasi",
-      imageUrl: "https://picsum.photos/id/" + generateRandom() + "/120/160",
+      imageUrl: "https://picsum.photos/id/",
       author: "John Doe",
       rating: 4.5,
       synopsis:
@@ -34,7 +22,7 @@ export default defineEventHandler((event) => {
       id: 2,
       name: "Gema Kekal",
       category: "Fiksi Ilmiah",
-      imageUrl: "https://picsum.photos/id/" + generateRandom() + "/120/160",
+      imageUrl: "https://picsum.photos/id/",
       author: "Jane Smith",
       rating: 4.2,
       synopsis:
@@ -48,7 +36,7 @@ export default defineEventHandler((event) => {
       id: 3,
       name: "Hatiku Mekar",
       category: "Romantis",
-      imageUrl: "https://picsum.photos/id/104/120/160",
+      imageUrl: "https://picsum.photos/id/",
       author: "Emily Johnson",
       rating: 4.8,
       synopsis:
@@ -62,7 +50,7 @@ export default defineEventHandler((event) => {
       id: 4,
       name: "Hutan yang Dihuni Kekuatan Gaib",
       category: "Fantasi",
-      imageUrl: "https://picsum.photos/id/106/120/160",
+      imageUrl: "https://picsum.photos/id/",
       author: "Samuel Adams",
       rating: 3.9,
       synopsis:
@@ -76,7 +64,7 @@ export default defineEventHandler((event) => {
       id: 5,
       name: "Belokan Tak Terduga",
       category: "Drama",
-      imageUrl: "https://picsum.photos/id/127/120/160",
+      imageUrl: "https://picsum.photos/id/",
       author: "Sophia Williams",
       rating: 4.1,
       synopsis:
@@ -90,7 +78,7 @@ export default defineEventHandler((event) => {
       id: 6,
       name: "Mansion Hollow yang Angker",
       category: "Horor",
-      imageUrl: "https://picsum.photos/id/108/120/160",
+      imageUrl: "https://picsum.photos/id/",
       author: "David Black",
       rating: 3.7,
       synopsis:
@@ -104,7 +92,7 @@ export default defineEventHandler((event) => {
       id: 7,
       name: "Pencarian Relik Suci",
       category: "Petualangan",
-      imageUrl: "https://picsum.photos/id/109/120/160",
+      imageUrl: "https://picsum.photos/id/",
       author: "Olivia White",
       rating: 4.6,
       synopsis:
@@ -118,7 +106,7 @@ export default defineEventHandler((event) => {
       id: 8,
       name: "Terbahak-Bahak",
       category: "Komedi",
-      imageUrl: "https://picsum.photos/id/110/120/160",
+      imageUrl: "https://picsum.photos/id/",
       author: "Michael Brown",
       rating: 4.0,
       synopsis:
@@ -132,7 +120,7 @@ export default defineEventHandler((event) => {
       id: 9,
       name: "Misteri Gulungan Kuno",
       category: "Misteri",
-      imageUrl: "https://picsum.photos/id/111/120/160",
+      imageUrl: "https://picsum.photos/id/",
       author: "Ella Robinson",
       rating: 4.3,
       synopsis:
@@ -146,7 +134,7 @@ export default defineEventHandler((event) => {
       id: 10,
       name: "Cinta di Kota",
       category: "Romantis",
-      imageUrl: "https://picsum.photos/id/112/120/160",
+      imageUrl: "https://picsum.photos/id/",
       author: "Sophia Williams",
       rating: 4.5,
       synopsis:
@@ -160,7 +148,7 @@ export default defineEventHandler((event) => {
       id: 11,
       name: "Petualangan Ruang Angkasa",
       category: "Fiksi Ilmiah",
-      imageUrl: "https://picsum.photos/id/113/120/160",
+      imageUrl: "https://picsum.photos/id/",
       author: "Alan Reynolds",
       rating: 4.7,
       synopsis:
@@ -174,7 +162,7 @@ export default defineEventHandler((event) => {
       id: 12,
       name: "Kisah Perang Besar",
       category: "Sejarah",
-      imageUrl: "https://picsum.photos/id/114/120/160",
+      imageUrl: "https://picsum.photos/id/",
       author: "Helen Turner",
       rating: 4.4,
       synopsis:
@@ -188,7 +176,7 @@ export default defineEventHandler((event) => {
       id: 13,
       name: "Pulau Misteri",
       category: "Petualangan",
-      imageUrl: "https://picsum.photos/id/115/120/160",
+      imageUrl: "https://picsum.photos/id/",
       author: "Laura Davis",
       rating: 4.1,
       synopsis:
@@ -202,7 +190,7 @@ export default defineEventHandler((event) => {
       id: 14,
       name: "Rahasia Laboratorium",
       category: "Thriller",
-      imageUrl: "https://picsum.photos/id/116/120/160",
+      imageUrl: "https://picsum.photos/id/",
       author: "Mark Johnson",
       rating: 4.6,
       synopsis:
@@ -216,7 +204,7 @@ export default defineEventHandler((event) => {
       id: 15,
       name: "Pelayaran Legendaris",
       category: "Petualangan",
-      imageUrl: "https://picsum.photos/id/117/120/160",
+      imageUrl: "https://picsum.photos/id/",
       author: "Sophie Anderson",
       rating: 4.3,
       synopsis:

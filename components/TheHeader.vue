@@ -26,7 +26,7 @@ onMounted(() => {
           alt="Flowbite Logo"
         />
         <span
-          class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+          class="self-center text-base font-semibold whitespace-nowrap text-blue-600"
           >NOVELTOON</span
         >
       </a>

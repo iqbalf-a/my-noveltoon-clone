@@ -2,11 +2,19 @@
   <div>Component: TheHeader</div>
 </template> -->
 
-<script lang="ts" setup></script>
+<script setup>
+import { onMounted } from "vue";
+import { initFlowbite } from "flowbite";
+
+// initialize components based on data attribute selectors
+onMounted(() => {
+  initFlowbite();
+});
+</script>
 
 <template>
   <div>
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed shadow-md  z-50 w-full ">
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4"
       >

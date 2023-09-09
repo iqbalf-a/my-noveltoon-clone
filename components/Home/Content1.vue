@@ -1,22 +1,26 @@
 <template>
-  <div class="container max-w-screen-xl mx-auto my-12 px-8">
-    <div class="grid grid-cols-6">
+  <div class="container max-w-screen-xl mx-auto my-12 p-8">
+    <div class="flex flex-wrap">
       <!-- Left Content -->
-      <div class="grid col-span-4">
-        <div class="grid grid-cols-2">
+      <div class="w-[55rem] pr-8">
+        <div class="flex justify-between">
           <!-- Top  -->
           <div>
             <p class="text-lg font-bold">Terpopuler</p>
           </div>
 
           <div class="text-right">
-            <h6>Lihat Semua ></h6>
+            <a href="">Lihat Semua ></a>
           </div>
         </div>
 
-        <div class="grid grid-cols-5 gap-3">
+        <div class="flex flex-wrap">
           <!-- Content Item -->
-          <div v-for="item in data?.slice(0, 10)" :key="item?.id">
+          <div
+            v-for="item in data?.slice(0, 10)"
+            :key="item?.id"
+            class="w-36 mt-8 ml-4"
+          >
             <a href="">
               <img :src="item.imageUrl" :alt="item.name" class="rounded-lg" />
               <p class="mt-3 text-base">{{ item?.name }}</p>
@@ -27,7 +31,7 @@
       </div>
 
       <!-- Right Content -->
-      <div class="ml-12 col-span-2">
+      <div class="w-[20rem]">
         <div>
           <p class="text-lg font-bold">Novelku - Baca dan tulis dimanapun</p>
         </div>
@@ -37,17 +41,17 @@
             <div
               v-for="item in data?.slice(0, 4)"
               :key="item?.id"
-              class="mt-4 grid grid-cols-3"
+              class="mt-4 flex flex-row"
             >
-              <a href="" class="col-span-1">
+              <a href="" class="w-1/3">
                 <img
                   :src="item.imageUrl"
                   :alt="item.name"
-                  style="height: 100px; width: 150px"
-                  class="relative overflow-hidden rounded-lg"
+                  style="height: 100px; width: 200px"
+                  class="object-cover rounded-lg"
                 />
               </a>
-              <a href="" class="col-span-2 ml-4">
+              <a href="" class="w-2/3 ml-4">
                 <p class="text-sm">{{ item?.name }}</p>
                 <p class="text-xs/[18px] line-clamp-3 mt-3">
                   {{ item?.synopsis }}
@@ -55,7 +59,9 @@
               </a>
             </div>
           </div>
-          <a href="" class="mt-8">Romantis Novel (novelku) ></a>
+          <div class="mt-8">
+            <a href="">Romantis Novel (novelku) ></a>
+          </div>
         </div>
       </div>
     </div>

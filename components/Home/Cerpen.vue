@@ -5,9 +5,9 @@
       <div class="font-bold text-lg">
         <p>Cerpen</p>
       </div>
-      <div class="grid grid-cols-2 gap-4">
+      <div class="flex flex-wrap">
         <!-- data cerpen -->
-        <div v-for="item in dataCerpen?.slice(0, 4)" :key="item?.id">
+        <div v-for="item in dataCerpen?.slice(0, 4)" :key="item?.id" class="w-[35rem] pr-8">
           <div class="border rounded-lg p-4 mt-8 shadow-md">
             <h1 class="font-semibold text-lg capitalize">{{ item.title }}</h1>
             <h1 class="text-gray-600/25 font-semibold mt-4">

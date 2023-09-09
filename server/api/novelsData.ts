@@ -1,10 +1,26 @@
+function generateRandom(min = 0, max = 500) {
+  // find diff
+  let difference = max - min;
+
+  // generate random number
+  let rand = Math.random();
+
+  // multiply with difference
+  rand = Math.floor(rand * difference);
+
+  // add with min value
+  rand = rand + min;
+
+  return rand;
+}
+
 export default defineEventHandler((event) => {
   const data = [
     {
       id: 1,
       name: "Petualangan Kerajaan yang Hilang",
       category: "Fantasi",
-      imageUrl: "https://picsum.photos/id/102/120/160",
+      imageUrl: "https://picsum.photos/id/" + generateRandom() + "/120/160",
       author: "John Doe",
       rating: 4.5,
       synopsis:
@@ -18,7 +34,7 @@ export default defineEventHandler((event) => {
       id: 2,
       name: "Gema Kekal",
       category: "Fiksi Ilmiah",
-      imageUrl: "https://picsum.photos/id/103/120/160",
+      imageUrl: "https://picsum.photos/id/" + generateRandom() + "/120/160",
       author: "Jane Smith",
       rating: 4.2,
       synopsis:

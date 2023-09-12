@@ -3,7 +3,7 @@
   <DetailBreadcrumb />
   <DetailBanner />
   <DetailContent />
-  <DetailNavBottom />
+  <DetailBottomNav />
 </template>
 
 <script setup lang="ts">

@@ -6,7 +6,7 @@
         <p class="text-lg font-bold uppercase">{{ itemHeadline?.listTitle }}</p>
         <div class="flex flex-wrap mt-8 gap-5">
           <div v-for="item in data?.slice(0, 6)" :key="item?.id">
-            <a href="" class="md:w-36 lg:mt-8 md:ml-4 flex md:flex-col sm:flex">
+            <a href="/detail/1" class="md:w-36 lg:mt-8 md:ml-4 flex md:flex-col sm:flex">
               <img
                 :src="item.imageUrl + generateRandom() + '/120/160'"
                 :alt="item.name"

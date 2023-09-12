@@ -70,6 +70,18 @@ export default defineEventHandler((event) => {
           paragraph:
             "Episode terakhir adalah pertempuran akhir untuk mencapai harta karun dan mengungkap rahasia di baliknya.",
         },
+        {
+          id: 11,
+          episode_title: "Penyelesaian Rahasia",
+          paragraph:
+            "Episode terakhir adalah penyelesaian dari semua rahasia yang telah diungkapkan selama perjalanan detektif di kota terlarang.",
+        },
+        {
+          id: 12,
+          episode_title: "Kebangkitan Kejahatan",
+          paragraph:
+            "Di episode ini, kejahatan kembali muncul dan detektif harus memutuskan apakah akan melanjutkan perjuangan melawan kejahatan.",
+        },
       ],
     },
     {

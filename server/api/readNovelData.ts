@@ -1,0 +1,11 @@
+export default defineEventHandler((event) => {
+  const data = [
+    {
+      id: 1,
+      title: "Petualangan Sang Pahlawan",
+      story:
+        "<p>Di sebuah negeri jauh di timur, terdapat seorang pahlawan bernama Aria yang memiliki misi besar. Ia harus menjelajahi dunia yang penuh misteri dan bahaya, dengan tujuan untuk menyelamatkan kerajaan dari malapetaka yang mengancam.</p><br><p>Selama perjalanannya, Aria bertemu dengan seorang penyihir tua yang memberinya petunjuk berharga. Penyihir itu berkata, 'Jika kamu ingin mencapai tujuanmu, carilah kunci ajaib di hutan terlarang.'</p><br><p>Aria memasuki hutan terlarang yang misterius, tempat ia menemukan makhluk-makhluk aneh dan rintangan yang harus ia atasi. Ketika ia mencapai pusat hutan, Aria menemukan sebuah prasasti dengan kode rahasia yang harus dipecahkan untuk membuka gerbang ke dunia yang lebih dalam.</p><br><br><p>Dibalik gerbang tersebut, dia menemukan dunia yang terlupakan, di mana harta karun luar biasa tersimpan dan teka-teki yang menguji kecerdasannya.</p><br><p>Di tengah perjalanan petualangannya, Aria berhadapan dengan musuh-musuh yang sangat kuat. Ia harus memanfaatkan semua keterampilannya dan keberaniannya untuk bertahan hidup dan terus melanjutkan petualangannya.</p><br><p>Untuk mencapai tujuannya, Aria terpaksa melakukan pengorbanan besar. Ia menyadari bahwa menjadi seorang pahlawan bukan hanya tentang memiliki kekuatan, melainkan juga tentang memiliki kebijaksanaan dan cinta untuk dunia ini.</p><br><p>Setelah berhasil mengatasi semua rintangan dan mengumpulkan semua elemen yang diperlukan, Aria akhirnya mampu menyelamatkan kerajaan dari malapetaka yang akan datang.</p><br><p>Pasca-petualangan, Aria menemukan rahasia besar yang mengubah pandangannya terhadap dunia. Ia menyadari bahwa petualangan sebenarnya hanya merupakan awal dari perjalanan yang lebih panjang.</p><br><p>Aria memutuskan untuk melanjutkan petualangannya ke dunia lain, meninggalkan kerajaan dalam keadaan damai dan menjelajahi dunia yang tak terbatas.</p><br><p>Kisah petualangan Aria adalah cerita yang membangkitkan semangat, memaparkan perjuangan, pengorbanan, serta penemuan. Ini adalah kisah yang dapat menginspirasi semua orang untuk memulai petualangan mereka sendiri.</p>",
+    },
+  ];
+  return data;
+});

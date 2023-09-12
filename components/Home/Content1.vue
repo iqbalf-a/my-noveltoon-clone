@@ -49,7 +49,7 @@
               :key="item?.id"
               class="mt-4 flex flex-row"
             >
-              <a href="" class="w-1/3">
+              <a href="/detail/1" class="w-1/3">
                 <img
                   :src="item.imageUrl + generateRandom() + '/120/160'"
                   :alt="item.name"

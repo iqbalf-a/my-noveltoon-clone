@@ -17,8 +17,10 @@
         <div class="flex flex-wrap">
           <!-- Content Item -->
           <div v-for="item in data?.slice(0, 10)" :key="item?.id" class="">
-            <a href="" class="md:w-36 mt-8 md:ml-4 flex md:flex-col sm:flex">
-              <img
+            <NuxtLink
+              :to="`/detail/${generate1_5()}`"
+              class="md:w-36 mt-8 md:ml-4 flex md:flex-col sm:flex"
+              ><img
                 :src="item.imageUrl + generateRandom() + '/120/160'"
                 :alt="item.name"
                 class="rounded-lg"
@@ -26,8 +28,8 @@
               <div class="pl-4">
                 <p class="md:mt-3 text-base">{{ item?.name }}</p>
                 <p class="text-sm/[18px] truncate">{{ item?.tags }}</p>
-              </div>
-            </a>
+              </div></NuxtLink
+            >
           </div>
         </div>
       </div>
@@ -72,17 +74,13 @@
   </div>
 </template>
 
-<!-- <script>
-export default {
-  setup() {
-    return {};
-  },
-};
-</script> -->
-
 <script setup lang="ts">
 const { data } = await useFetch("/api/novelsData");
 function generateRandom(min = 0, max = 500) {
+  return Math.floor(Math.random() * max) + min;
+}
+
+function generate1_5(min = 1, max = 5) {
   return Math.floor(Math.random() * max) + min;
 }
 </script>

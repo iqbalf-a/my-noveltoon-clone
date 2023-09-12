@@ -1,7 +1,3 @@
-function generateRandom(min = 0, max = 500) {
-  return Math.floor(Math.random() * max) + min;
-}
-
 export default defineEventHandler((event) => {
   const data = [
     {

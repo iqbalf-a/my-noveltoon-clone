@@ -1,6 +1,7 @@
 <template>
     <div>
         <ReadTopNav />
+        <ReadSideBar />
         <ReadContent />
         <ReadBottomNav />
     </div>

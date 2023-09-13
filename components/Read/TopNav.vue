@@ -1,5 +1,5 @@
 <template>
-  <nav class="w-full fixed shadow-md h-8 md:h-16 flex justify-center bg-white">
+  <nav class="w-full fixed shadow-md h-12 md:h-16 flex justify-center bg-white">
     <div class="w-11/12 md:w-2/3 flex justify-between items-center">
       <a href="/detail/1">
         <svg

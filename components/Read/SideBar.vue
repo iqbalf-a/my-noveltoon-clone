@@ -1,13 +1,13 @@
 <template>
   <div class="hidden md:block">
-    <div
+    <!-- <div
       class="fixed inset-0 bg-black opacity-50"
       :class="{ hidden: !isOpen }"
-    ></div>
+    ></div> -->
     <div
       id="wadah"
       class="fixed h-full transition-transform transform ease-in-out duration-300 right-0"
-      :class="{ '-translate-x-[21rem]': isOpen, 'translate-x-0': !isOpen }"
+      :class="{ '-translate-x-96': isOpen, 'translate-x-0': !isOpen }"
     >
       <div class="flex flex-col justify-center h-full">
         <!-- Tombol Toggle Sidebar -->
@@ -38,8 +38,8 @@
 
     <div
       id="wadah"
-      class="fixed h-full w-96 bg-white transition-transform transform translate-x-full ease-in-out duration-300 right-0 border"
-      :class="{ 'translate-x-10': isOpen, '-translate-x-0': !isOpen }"
+      class="fixed h-full w-96 bg-white transition-transform transform ease-in-out duration-300 right-0 border"
+      :class="{ 'translate-x-0': isOpen, 'translate-x-96': !isOpen }"
     >
       <!-- Sidebar Content -->
       <nav class="py-5 px-8">

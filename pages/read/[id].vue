@@ -1,10 +1,10 @@
 <template>
-    <div>
-        <ReadTopNav />
-        <ReadSideBar />
-        <ReadContent />
-        <ReadBottomNav />
-    </div>
+  <div>
+    <!-- <ReadTopNav /> -->
+    <ReadSideBar />
+    <!-- <ReadContent /> -->
+    <!-- <ReadBottomNav /> -->
+  </div>
 </template>
 
 <script setup lang="ts">

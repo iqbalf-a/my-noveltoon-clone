@@ -9,6 +9,7 @@
           alt=""
           class="rounded-xl h-36 md:h-64"
         />
+        <p>{{ fontSize }}</p>
       </div>
       <div class="font-semibold text-sm md:text-xl md:pt-8 pt-4">
         <p>{{ readNovelData[0].title }}</p>
@@ -127,4 +128,5 @@
 
 <script setup lang="ts">
 const readNovelData = await useFetch("/api/readNovelData").data;
+
 </script>

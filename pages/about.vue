@@ -1,15 +1,14 @@
+<!-- MyPage.vue -->
 <template>
   <div>
-    <About />
+    <h1>My Page</h1>
+    <AboutChild :dataProp="dataToSend" />
+    <About :receivedData="dataReceived" />
   </div>
 </template>
 
-<script>
-export default {
-  created() {
-    console.log(this.$route.query.id); // john
-  },
-};
-</script>
+<script setup>
 
-<style lang="scss" scoped></style>
+const dataToSend = 'Ini adalah data dari ComponentA';
+const dataReceived = ref('');
+</script>

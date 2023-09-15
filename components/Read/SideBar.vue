@@ -44,12 +44,12 @@
 
     <!-- Start SideBar -->
 
-    <div class="hidden md:block">
+    <div class="">
       <div
         id="wadah"
         class="fixed h-full transition-transform transform ease-in-out duration-300 right-0"
         :class="{
-          '-translate-x-96': isOpen || isOpenSetting,
+          '-translate-x-64 md:-translate-x-96': isOpen || isOpenSetting,
           'translate-x-0': !isOpen && !isOpenSetting,
         }"
       >
@@ -116,7 +116,7 @@
       <!-- start sidebar episode -->
       <div
         id="wadah"
-        class="fixed h-full w-96 bg-white transition-transform transform ease-in-out duration-300 right-0 border"
+        class="fixed h-full w-64 md:w-96 bg-white transition-transform transform ease-in-out duration-300 right-0 border"
         :class="{ 'translate-x-0': isOpen, 'translate-x-96': !isOpen }"
       >
         <!-- Sidebar Content -->
@@ -151,7 +151,7 @@
       <!-- start sidebar setting -->
       <div
         id="wadah"
-        class="fixed h-full w-96 bg-white transition-transform transform ease-in-out duration-300 right-0 border"
+        class="fixed h-full w-64 md:w-96 bg-white transition-transform transform ease-in-out duration-300 right-0 border"
         :class="{
           'translate-x-0': isOpenSetting,
           'translate-x-96': !isOpenSetting,
@@ -338,7 +338,7 @@
     <!-- Start content elemen -->
     <div class="w-full flex justify-center pb-4">
       <div
-        class="w-11/12 md:w-2/3 flex flex-col items-center border mt-7 md:mt-16 mb-0 md:mb-16 pb-10"
+        class="w-full md:w-2/3 flex flex-col items-center border mt-7 md:mt-16 mb-0 md:mb-16 pb-10"
       >
         <div class="md:pt-16 pt-8">
           <img
